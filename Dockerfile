@@ -18,7 +18,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copia el archivo JAR construido por Maven a la imagen
-COPY --from=builder /app/target/spring-boot-employer-management-api-0.0.1-SNAPSHOT.jar /app/api-test.jar
+COPY --from=builder /app/target/employer-management-api-0.0.1-SNAPSHOT.jar /app/api-test.jar
 
 # Expone el puerto 8080, que es el puerto por defecto para las aplicaciones Spring Boot
 EXPOSE 8080
